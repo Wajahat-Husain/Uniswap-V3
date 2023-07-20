@@ -110,7 +110,7 @@ const ConnectWallet = ({ userInfoValue, etherObjValue }) => {
                 let { name, chainId } = await provider.getNetwork();
                 console.log(chainId, name,  networksConfig.GoerliTestnet.chainId);
 
-                if (`0x${Number(parseInt(5)).toString(16)}` ==  networksConfig.GoerliTestnet.chainId) {
+                if (`0x${Number(parseInt(5)).toString(16)}` ===  networksConfig.GoerliTestnet.chainId) {
 
                     console.log("Bravo!, you are on the correct network");
                     let signer = await provider.getSigner();
